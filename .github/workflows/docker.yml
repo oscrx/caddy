@@ -30,7 +30,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository }}:sso-latest
+          tags: ghcr.io/${{ github.repository }}
           platforms: linux/amd64,linux/arm64
-          cache-from: type=registry,ref=ghcr.io/${{ github.repository }}:sso-latest
+          cache-from: type=registry,ref=ghcr.io/${{ github.repository }}
           cache-to: type=inline
